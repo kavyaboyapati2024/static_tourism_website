@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous"/>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="sectionHome">
+        <div class="sectionHome-bg-container d-flex flex-column justify-content-end">
+            <div class="sectionHome-card-container">
+                <h1 class="sectionHome-heading">Tourism</h1>
+                <p class="sectionHome-text">Plan your trip and Travel all over the world</p>
+                <button class="sectionHome-button" onclick="display('sectionFavplaces')">Get Started</button>
+            </div>
+        </div>
+    </div>
+
+    
+    <div id="sectionFavplaces">
+        <div class="favplaces-bg-container d-flex flex-column ">
+            <h1 class="favplaces-main-heading">Famous Places</h1>
+            <div class="place-card-container d-flex flex-row" onclick="display('sectionTajMahal')">
+                <div class="d-flex flex-column">
+                    <h1 class="place-heading">Taj Mahal</h1>
+                    <p class="place-text">
+                        If there was just one symbol to represent all of India, it would be
+                        the Taj Mahal.Taj Mahal is essentially a tomb built in the memory of Shah Jahan's wife, Mumtaz
+                        Mahal. Taj Mahal is also famous as the symbol of love. The popular dome and the pillars around
+                        the Taj Mahal are common in medieval Mughal architecture. In 1982, the Taj Mahal was designated
+                        as a World Heritage Site by UNESCO.
+                    </p>
+                </div>
+                <img src="/integrated/pictures/tajmahal1.jpeg" class="place-image" />
+            </div>
+
+            <div class="place-card-container d-flex flex-row" onclick="display('sectionGoldenTemple')">
+                <div class="d-flex flex-column">
+                    <h1 class="place-heading">Golden Temple</h1>
+                    <p class="place-text">
+                        One of Amritsar's greatest attractions and its spiritual hub is the Sri Harmandir Sahib,
+                        commonly known as the Golden Temple. This is the holiest temple in the Sikh faith. Guru Ramdas
+                        Sahib, the 4th of 10 Sikh gurus, constructed the temple and its pool in the 1500s as a place of
+                        worship for all.It was rebuilt by Maharaja Ranjit Singh in 1830 purely with marble and gold.
+                    </p>
+                </div>
+                <img src="/integrated/pictures/goldtemp1.webp" class="place-image" />
+            </div>
+
+            <div class="place-card-container d-flex flex-row" onclick="display('sectionIndiaGate')">
+                <div class="d-flex flex-column">
+                    <h1 class="place-heading">India Gate</h1>
+                    <p class="place-text">
+                        India Gate is counted amongst the largest war memorials in India and every Republic Day, the
+                        Prime Minister visits the Gate to pay their tributes to the Amar Jawan Jyoti, following which
+                        the Republic Day parade starts. India Gate is often a location for civil society protests, and
+                        is popular with tourists. Sir George Sydenham Clarke with the final design of George Wittet for
+                        the Gateway sanctioned in August 1914.
+                    </p>
+                </div>
+                <img src="/integrated/pictures/indgate1.webp" class="place-image" />
+            </div>
+
+            <div class="place-card-container d-flex flex-row" onclick="display('sectionQutubMinar')">
+                <div class="d-flex flex-column">
+                    <h1 class="place-heading">Qutub Minar</h1>
+                    <p class="place-text">
+                        The Qutub Minar, also spelled "Qutb Minar," was built in 1192 by Qutb-ud-din Aibak, the first
+                        Sultan and first Muslim ruler of Delhi, and was completed in 1368 by Firoz Shah Tughlaq. Built
+                        of red and buff sandstone and eloquently carved with inscriptional bands, the Qutb Minar
+                        is the tallest masonry tower in India, measuring 72.5 metres high, with projecting balconies for
+                        calling all Muadhdhin to prayer. 
+                    </p>
+                </div>
+                <img src="/integrated/pictures/qumin1.jpeg" class="place-image" />
+            </div>
+            <button class="btn btn-light" style="width:100px;align-self: center;" onclick="display('sectionHome')">back</button>
+        </div>
+    </div>
+
+
+
+    <div id="sectionTajMahal">
+        <div class="detview-bg-container d-flex">
+
+            <div class="detview-card-container d-flex flex-row">
+                <div id="TajMahal-carousel" class="carousel slide" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                    </ol>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/tajmahal-c1-img.png"
+                                class="d-block w-100" alt="..." height="450px" />
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/tajmahal-c2-img.png"
+                                class="d-block w-100" alt="..." height="450px" />
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/tajmahal-c3-img.png"
+                                class="d-block w-100" alt="..." height="450px" />
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+            </div>
+            <div class="detview-card-text-container">
+                <h1 class="detview-text-container-heading">Taj Mahal</h1>
+                <p class="detview-card-conatainer-para">
+                    The Taj Mahal is an ivory-white marble mausoleum on the south bank of the Yamuna river in the Indian
+                    city of Agra. It was commissioned in 1632 by the Mughal emperor, Shah Jahan (reigned from 1628 to
+                    1658), to house the tomb of his favourite wife, Mumtaz Mahal. The tomb is the centrepiece of a
+                    17-hectare (42-acre)complex, which includes a mosque and a guest house, and is set in formal gardens
+                    bounded on three sides by a crenellated wall.
+                    <br/>
+                    <br/>
+                    The Taj Mahal was designated as a UNESCO World Heritage Site in 1983 for being “the jewel of Muslim
+                    art in India and one of the universally admired masterpieces of the world’s heritage”. It is
+                    regarded by many as the best example of Mughal architecture and a symbol of India’s rich history.
+                    The Taj Mahal attracts 7–8 million visitors a year. In 2007, it was declared a winner of the New 7
+                    Wonders of the World (2000–2007) initiative.
+                </p>
+            </div>
+            <button class="btn btn-light" style="align-self:center;width:100px;" onclick="display('sectionFavplaces')">back</button>
+        </div>
+        
+     </div>
+
+
+     <div id="sectionQutubMinar">
+        <div class="detview-bg-container d-flex">
+
+            <div class="detview-card-container d-flex flex-row">
+                <div id="qutubminar-carousel" class="carousel slide" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                    </ol>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="https://sagahotels.in/wp-content/uploads/2024/02/image_2024_02_23T09_03_14_113Z.png"
+                                class="d-block w-100" alt="..." height="450px" />
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://i.ytimg.com/vi/D_GIqDlfDF4/maxresdefault.jpg"
+                                class="d-block w-100" alt="..." height="450px" />
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://thrillingtravel.in/wp-content/uploads/2019/10/Delhi-Qutub-Minar.jpg"
+                                class="d-block w-100" alt="..." height="450px" />
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+            </div>
+            <div class="detview-card-text-container">
+                <h1 class="detview-text-container-heading">Qutub Minar</h1>
+                <p class="detview-card-conatainer-para">
+                    Built in the early 13th century a few kilometres south of Delhi, the red sandstone tower of Qutb
+                    Minar is 72.5 m high, tapering from 2.75 m in diameter at its peak to 14.32 m at its base, and
+                    alternating angular and rounded flutings. The surrounding archaeological area contains funerary
+                    buildings, notably the magnificent Alai-Darwaza Gate, the masterpiece of Indo-Muslim art (built in
+                    1311), and two mosques, including the Quwwatu'l-Islam, the oldest in northern India, built of
+                    materials reused from some 20 Brahman temples.
+                    <br />
+                    <br />
+                    Referred to as the Qutb mosque, the Quwwatu’l-Islam, meaning the Might of Islam, introduced to India
+                    the classic model of Islamic architecture that had developed in western Asia. The mosque constituted
+                    a large rectangular courtyard enclosed by arcades having carved pillars on three sides and an
+                    imposing five-arched screen marking the west.
+                </p>
+            </div>
+            <button class="btn btn-light" style="align-self:center;width:100px;" onclick="display('sectionFavplaces')">back</button>
+        </div>
+        
+        </div>
+
+
+        <div id="sectionIndiaGate">
+            <div class="detview-bg-container d-flex">
+    
+                <div class="detview-card-container d-flex flex-row">
+                    <div id="Indiagate-carousel" class="carousel slide" data-ride="carousel">
+                        <ol class="carousel-indicators">
+                            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                        </ol>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="https://img.staticmb.com/mbcontent/images/crop/uploads/2022/9/India%20Gate%20delhi_0_1200.jpg" class="d-block w-100" alt="..." height="450px" />
+                            </div>
+                            <div class="carousel-item">
+                                <img src="https://images.news18.com/ibnlive/uploads/2022/01/india-gate.jpg" class="d-block w-100" alt="..." height="450px" />
+                            </div>
+                            <div class="carousel-item">
+                                <img src="https://media.tacdn.com/media/attractions-splice-spp-674x446/0b/27/a9/fb.jpg" class="d-block w-100" alt="..." height="450px" />
+                            </div>
+                        </div>
+                        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="detview-card-text-container">
+                    <h1 class="detview-text-container-heading">India Gate</h1>
+                    <p class="detview-card-conatainer-para">
+                        At the centre of New Delhi stands the 42 m high India Gate, an "Arc-de-Triomphe" like archway in the
+                        middle of a crossroad. Almost similar to its French counterpart, it commemorates the 70,000 Indian
+                        soldiers who lost their lives fighting for the British Army during the World War I. The memorial
+                        bears the names of more than 13,516 British and Indian soldiers killed in the Northwestern Frontier
+                        in the Afghan war of 1919.                        
+                        <br />
+                        <br />
+                        The foundation stone of India Gate was laid by His Royal Highness, the Duke of Connaught in 1921 and
+                        it was designed by Edwin Lutyens. The monument was dedicated to the nation 10 years later by the
+                        then Viceroy, Lord Irwin. Another memorial, Amar Jawan Jyoti was added much later, after India got
+                        its independence. The eternal flame burns day and night under the arch to remind the nation of
+                        soldiers who laid down their lives in the Indo-Pakistan War of December 1971.   
+                   </p>
+                </div>
+                <button class="btn btn-light" style="align-self:center;width:100px;" onclick="display('sectionFavplaces')">back</button>
+            </div>
+       </div>
+
+
+       <div id="sectionGoldenTemple">
+        <div class="detview-bg-container d-flex">
+
+            <div class="detview-card-container d-flex flex-row">
+                <div id="GoldenTemple-carousel" class="carousel slide" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                    </ol>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="/integrated/pictures/goldtemp1.webp" class="d-block w-100" alt="..." height="450px" />
+                        </div>
+                        <div class="carousel-item">
+                            <img src="/integrated/pictures/goldtemp2.webp" class="d-block w-100" alt="..." height="450px" />
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://assets.cntraveller.in/photos/60c07fa11393a40ce8d810b0/4:3/w_4076,h_3057,c_limit/D8R9MT.jpg" class="d-block w-100" alt="..." height="450px"/>
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+            </div>
+            <div class="detview-card-text-container">
+                <h1 class="detview-text-container-heading">Golden Temple</h1>
+                <p class="detview-card-conatainer-para">
+                    The Golden Temple, or Harmandir Sahib, is the focus of a complex of buildings that form the heart of
+                    Sikhism. The temple itself occupies a small island in the center of a tank, or pool, called the
+                    Amrita Saras (“Pool of Nectar”)—the source of the city’s name—and is connected to land on its west
+                    side by a marble causeway running across the pool. Situated facing the entrance to the causeway is
+                    the Akal Takht (“Throne of the Timeless One”), the chief center of authority of Sikhism and the
+                    headquarters of the Shiromani Akali Dal (Supreme Akali Party), the main political party of the Sikhs
+                    in Punjab. 
+                    <br />
+                    <br />                    
+                    On the north side of the tank is the main entrance to the complex and the Teja Singh
+                    Samudri Hall (Clock Tower), which houses the main offices of the Shiromani Gurdwara Parbandhak
+                    Committee (Supreme Committee of Temple Management), which oversees the main Sikh gurdwaras. Among
+                    several buildings on the east side of the tank are the Assembly Hall and the Guru Ram Das Langar,
+                    the latter a large dining hall that serves meals to thousands of pilgrims and other visitors each
+                    day.
+                </p>
+            </div>
+            <button class="btn btn-light" style="align-self:center;width:100px;" onclick="display('sectionFavplaces')">back</button>
+        </div>
+        </div>
+        
+        <script type="text/javascript" src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/js/ccbp-ui-kit.js"></script>
+</body>
+</html>
